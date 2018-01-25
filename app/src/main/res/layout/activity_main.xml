@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.andrewclark.button_counter_clark.MainActivity">
+
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        >
+
+
+        <TextView
+            android:id="@+id/countVal"
+            android:layout_width="385dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buttDec"
+            android:layout_centerHorizontal="true"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="150sp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="68dp" />
+
+        <Button
+            android:id="@+id/buttRes"
+            android:layout_width="237dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="143dp"
+            android:onClick="resCount"
+            android:text="Reset"
+            tools:layout_editor_absoluteX="74dp"
+            tools:layout_editor_absoluteY="308dp" />
+
+        <Button
+            android:id="@+id/buttDec"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buttRes"
+            android:layout_alignStart="@+id/buttRes"
+            android:onClick="decCount"
+            android:text="Decrement"
+            tools:layout_editor_absoluteX="192dp"
+            tools:layout_editor_absoluteY="260dp" />
+
+        <Button
+            android:id="@+id/buttInc"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buttRes"
+            android:layout_alignEnd="@+id/buttRes"
+            android:onClick="incCount"
+            android:text="Increment"
+            tools:layout_editor_absoluteX="74dp"
+            tools:layout_editor_absoluteY="260dp" />
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
