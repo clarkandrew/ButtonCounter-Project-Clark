@@ -1,4 +1,4 @@
-package com.example.andrewclark.button_counter_clark;
+package com.example.andrewclark.ButtonCounter_Project_Clark;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

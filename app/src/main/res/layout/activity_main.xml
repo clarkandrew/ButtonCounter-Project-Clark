@@ -1,66 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.andrewclark.button_counter_clark.MainActivity">
-
-
-    <RelativeLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_height="match_parent"
+    tools:context="com.example.andrewclark.ButtonCounter_Project_Clark.MainActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+    <LinearLayout
         android:layout_width="match_parent"
-        >
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="0dp">
+
+        <TextView
+            android:id="@+id/changeChar"
+            android:layout_width="385dp"
+            android:layout_height="wrap_content"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-50dp"
+            android:text="↕"
+            android:textAlignment="center"
+            android:textColor="#bdc3c7"
+            android:textSize="30sp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="68dp" />
+
 
 
         <TextView
             android:id="@+id/countVal"
             android:layout_width="385dp"
-            android:layout_height="wrap_content"
+            android:layout_height="203dp"
+
             android:layout_above="@+id/buttDec"
             android:layout_centerHorizontal="true"
             android:text="0"
             android:textAlignment="center"
-            android:textSize="150sp"
+            android:textSize="170sp"
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="68dp" />
 
-        <Button
-            android:id="@+id/buttRes"
-            android:layout_width="237dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="143dp"
-            android:onClick="resCount"
-            android:text="Reset"
-            tools:layout_editor_absoluteX="74dp"
-            tools:layout_editor_absoluteY="308dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@android:color/white"
+        >
 
         <Button
             android:id="@+id/buttDec"
-            android:layout_width="118dp"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/buttRes"
-            android:layout_alignStart="@+id/buttRes"
             android:onClick="decCount"
             android:text="Decrement"
+            android:layout_alignStart="@+id/buttRes"
+            android:layout_above="@+id/buttRes"
+
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:textColor="#ffffff"
             tools:layout_editor_absoluteX="192dp"
-            tools:layout_editor_absoluteY="260dp" />
+            tools:layout_editor_absoluteY="260dp"
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            />
 
         <Button
+
             android:id="@+id/buttInc"
-            android:layout_width="118dp"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/buttRes"
-            android:layout_alignEnd="@+id/buttRes"
             android:onClick="incCount"
             android:text="Increment"
-            tools:layout_editor_absoluteX="74dp"
-            tools:layout_editor_absoluteY="260dp" />
+            android:layout_alignStart="@+id/buttRes"
+            android:layout_above="@+id/buttRes"
 
-    </RelativeLayout>
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
 
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:textColor="#ffffff"
+            tools:layout_editor_absoluteX="192dp"
+            tools:layout_editor_absoluteY="260dp"
+            android:background="@drawable/buttonshape"
 
-</android.support.constraint.ConstraintLayout>
+            android:elevation="10dp"
+
+/>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    >
+
+    <Button
+        android:id="@+id/buttRes"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="resCount"
+        android:text="Reset"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="308dp" />
+
+</LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
