@@ -14,6 +14,29 @@ public class MainActivity extends AppCompatActivity {
     TextView countDisplay;
     TextView changeChar;
 
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState){
+        super.onSaveInstanceState(savedInstanceState);
+
+        savedInstanceState.putInt("savedNum", currVal);
+
+        savedInstanceState.putString("savedChar", String.valueOf(changeChar.getText()));
+        savedInstanceState.putInt("savedColor", changeChar.getCurrentTextColor());
+    }
+
+    @Override
+    public void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        currVal = savedInstanceState.getInt("savedNum");
+        int currColor = savedInstanceState.getInt("savedColor");
+        String currChar = savedInstanceState.getString("savedChar");
+
+        countDisplay.setText(Integer.toString(currVal));
+        changeChar.setText(currChar);
+        changeChar.setTextColor(currColor );
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
