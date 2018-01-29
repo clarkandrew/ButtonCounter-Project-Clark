@@ -3,3 +3,7 @@
 ---
 A basic counter app for android.
 Made for CSCI-490 Mobile App Dev.
+
+
+##### Wow factor:
+![wow factor](https://i.imgur.com/AumaIrK.gif)
