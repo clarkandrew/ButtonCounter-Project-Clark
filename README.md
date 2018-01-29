@@ -6,4 +6,4 @@ Made for CSCI-490 Mobile App Dev.
 
 
 ##### Wow factor:
-![wow factor](https://i.imgur.com/AumaIrK.gif)
+![wow factor](display.gif)
