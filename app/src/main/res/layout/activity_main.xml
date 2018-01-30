@@ -29,8 +29,6 @@
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="68dp" />
 
-
-
         <TextView
             android:id="@+id/countVal"
             android:layout_width="385dp"

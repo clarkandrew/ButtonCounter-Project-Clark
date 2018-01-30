@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    int currVal = 0;
+    int currVal;
     TextView countDisplay;
     TextView changeChar;
 
@@ -19,7 +19,6 @@ public class MainActivity extends AppCompatActivity {
         super.onSaveInstanceState(savedInstanceState);
 
         savedInstanceState.putInt("savedNum", currVal);
-
         savedInstanceState.putString("savedChar", String.valueOf(changeChar.getText()));
         savedInstanceState.putInt("savedColor", changeChar.getCurrentTextColor());
     }
@@ -35,6 +34,10 @@ public class MainActivity extends AppCompatActivity {
         countDisplay.setText(Integer.toString(currVal));
         changeChar.setText(currChar);
         changeChar.setTextColor(currColor );
+
+        if(savedInstanceState == null) {
+            currVal = 0;
+        }
     }
 
 
